@@ -3,9 +3,14 @@
 @theme {
     --color-principale: #fce2c4;
     --color-bordure: #ffa945;
+    --clip-triangle: polygon(0 0, 0 100%, 70% 100%);
 }
 
-@utility flex-center {
-    @apply flex justify-center items-center;
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+
+    .clip-triangle {clip-path: var(--clip-triangle)}
 }
 
