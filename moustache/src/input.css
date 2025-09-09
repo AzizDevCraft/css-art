@@ -1,15 +1,37 @@
 @import "tailwindcss";
 
 @theme {
-    --animate-dance: dance ease-in-out 1s infinite;
+    --animate-dance-left: dance-left 1.5s ease-in-out infinite;
+    --animate-dance-right: dance-right 1.5s ease-in-out infinite;
 }
 
 @layer utilities{
     .flex-center {
         @apply flex justify-center items-center;
     }
-    @keyframes --animate-dance {
 
+    @keyframes dance-left {
+        0% {
+            transform: rotate(10deg);
+        }
+        50% {
+            transform: rotate(30deg);
+        }
+        100% {
+            transform: rotate(10deg);
+        }
+    }
+
+    @keyframes dance-right {
+        0% {
+            transform: rotate(-10deg);
+        }
+        50% {
+            transform: rotate(-30deg);
+        }
+        100% {
+            transform: rotate(-10deg);
+        }
     }
 }
 
