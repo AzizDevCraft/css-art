@@ -1,9 +1,17 @@
 @import "tailwindcss";
 
-@utility flex-center {
-    @apply flex justify-center items-center;
+@theme {
+    --animate-dance: dance ease-in-out 1s infinite;
 }
 
+@layer utilities{
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+    @keyframes --animate-dance {
+
+    }
+}
 
 @layer components {
     .mustache-base {
@@ -12,5 +20,4 @@
     .mustache-pointe {
         @apply w-[210px] h-[120px] border-b-[179px] box-content border-black absolute; 
     }
-  
 }
