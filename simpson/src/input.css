@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+    --color-simpson-yellow: #fed90f;
+    --color-simpson-mouth: #d1b271;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+}
