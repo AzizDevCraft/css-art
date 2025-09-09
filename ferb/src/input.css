@@ -16,7 +16,6 @@
 
 }
 
-
 @layer components {
     .iris {
         @apply w-4 h-5 bg-black rotate-[110deg] p-1 flex justify-end items-center;
@@ -25,5 +24,9 @@
 
     .pt-blanc {
         @apply w-1 h-1 bg-white rounded-full;
+    }
+
+    .hair {
+        @apply w-29 h-29 rounded-full border-t-[1.5rem] border-t-green-500 absolute;
     }
 }
