@@ -4,6 +4,7 @@
     --color-principale: #fce2c4;
     --color-bordure: #ffa945;
     --clip-triangle: polygon(0 0, 0 100%, 70% 100%);
+    --clip-ellipse : ellipse(8px 5px); 
 }
 
 @layer utilities {
@@ -12,5 +13,17 @@
     }
 
     .clip-triangle {clip-path: var(--clip-triangle)}
+
 }
 
+
+@layer components {
+    .iris {
+        @apply w-4 h-5 bg-black rotate-[110deg] p-1 flex justify-end items-center;
+        clip-path: var(--clip-ellipse);
+    }
+
+    .pt-blanc {
+        @apply w-1 h-1 bg-white rounded-full;
+    }
+}
