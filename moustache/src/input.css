@@ -10,7 +10,7 @@
         @apply w-[180px] h-[180px] bg-black [clip-path:circle()] absolute;
     }
     .mustache-pointe {
-        @apply w-[210px] h-[120px] border-b-[179px] box-content border-black absolute top-[25%]; 
+        @apply w-[210px] h-[120px] border-b-[179px] box-content border-black absolute; 
     }
   
 }
