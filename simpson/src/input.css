@@ -3,10 +3,15 @@
 @theme {
     --color-simpson-yellow: #fed90f;
     --color-simpson-mouth: #d1b271;
+    --clip-ellipse: ellipse(50% 40%)
 }
 
 @layer utilities {
     .flex-center {
         @apply flex justify-center items-center;
+    }
+
+    .ellipse {
+        clip-path: var(--clip-ellipse);
     }
 }
